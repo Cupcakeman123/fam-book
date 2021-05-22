@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            THE FAMILY BOOK
+        </title>
+    </head>
+    <body>
+        <center>
+        <h1 id="name">THE FAMILY BOOK</h1>
+        <img id="image" style="width: 20%; height: 35%;" src="https://th.bing.com/th/id/Rf8bbd0a5b3d1772e6122d65831280252?rik=9QD5Pvw3JlUYdw&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9780316070409_p0_v1_s1200x630.jpg&ehk=Lvcf6wbW1ArkjcUq62q1v8RajC1qlsQdgVOhp0i4DCc%3d&risl=&pid=ImgRaw&adlt=strict">
+
+        <br>
+        <br>
+        <br>
+
+        <button id="button" onclick="nextslide()" style="width: 7.5%; height: 3.75%; background-color: lightskyblue; border-radius: 50px;">Next Page</button>
+
+        </center>
+
+        <script>
+            var imgs = 
+            [
+            "https://www.jamiesale-cartoonist.com/wp-content/uploads/cartoon-business-man-free.png", 
+            "https://banner2.kisspng.com/20180409/taw/kisspng-cartoon-animation-female-character-business-woman-5acb0abb0363c2.4327480715232559950139.jpg", 
+            "https://static.vecteezy.com/system/resources/previews/000/601/007/original/vector-cute-cartoon-baby.jpg", 
+            "https://th.bing.com/th/id/Rf8bbd0a5b3d1772e6122d65831280252?rik=9QD5Pvw3JlUYdw&riu=http%3a%2f%2fprodimage.images-bn.com%2fpimages%2f9780316070409_p0_v1_s1200x630.jpg&ehk=Lvcf6wbW1ArkjcUq62q1v8RajC1qlsQdgVOhp0i4DCc%3d&risl=&pid=ImgRaw&adlt=strict"
+            ]
+            
+            function nextslide() 
+            {
+                var binob = 0;
+                document.getElementById("image").src = imgs[binob++];
+                
+                if(binob == 3) 
+                {
+
+                binob=0;
+
+                }
+            }
+        </script>
+    </body>
+</html>
